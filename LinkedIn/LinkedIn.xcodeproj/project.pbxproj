@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A19CDD2195D5FC7007D6EE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDD1195D5FC7007D6EE8 /* Foundation.framework */; };
+		3A19CDD4195D5FC7007D6EE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDD3195D5FC7007D6EE8 /* CoreGraphics.framework */; };
+		3A19CDD6195D5FC7007D6EE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDD5195D5FC7007D6EE8 /* UIKit.framework */; };
+		3A19CDDC195D5FC7007D6EE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A19CDDA195D5FC7007D6EE8 /* InfoPlist.strings */; };
+		3A19CDDE195D5FC7007D6EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CDDD195D5FC7007D6EE8 /* main.m */; };
+		3A19CDE2195D5FC8007D6EE8 /* TLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CDE1195D5FC8007D6EE8 /* TLAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CDE4195D5FC8007D6EE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A19CDE3195D5FC8007D6EE8 /* Images.xcassets */; };
+		3A19CDEB195D5FC8007D6EE8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDEA195D5FC8007D6EE8 /* XCTest.framework */; };
+		3A19CDEC195D5FC8007D6EE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDD1195D5FC7007D6EE8 /* Foundation.framework */; };
+		3A19CDED195D5FC8007D6EE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19CDD5195D5FC7007D6EE8 /* UIKit.framework */; };
+		3A19CDF5195D5FC8007D6EE8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A19CDF3195D5FC8007D6EE8 /* InfoPlist.strings */; };
+		3A19CDF7195D5FC8007D6EE8 /* LinkedInTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CDF6195D5FC8007D6EE8 /* LinkedInTests.m */; };
+		3A19CE03195D602B007D6EE8 /* TLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE02195D602B007D6EE8 /* TLViewController.m */; };
+		3A19CE31195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE06195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE32195D61D3007D6EE8 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE08195D61D3007D6EE8 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE33195D61D3007D6EE8 /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE0A195D61D3007D6EE8 /* NSURL+Base.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE34195D61D3007D6EE8 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE0C195D61D3007D6EE8 /* Base64Transcoder.c */; };
+		3A19CE35195D61D3007D6EE8 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE0E195D61D3007D6EE8 /* hmac.c */; };
+		3A19CE36195D61D3007D6EE8 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE10195D61D3007D6EE8 /* sha1.c */; };
+		3A19CE37195D61D3007D6EE8 /* OAAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE15195D61D3007D6EE8 /* OAAttachment.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE38195D61D3007D6EE8 /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE17195D61D3007D6EE8 /* OACall.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE39195D61D3007D6EE8 /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE19195D61D3007D6EE8 /* OAConsumer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3A195D61D3007D6EE8 /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE1B195D61D3007D6EE8 /* OADataFetcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3B195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE1D195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3C195D61D3007D6EE8 /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE1F195D61D3007D6EE8 /* OAMutableURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3D195D61D3007D6EE8 /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE21195D61D3007D6EE8 /* OAPlaintextSignatureProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3E195D61D3007D6EE8 /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE23195D61D3007D6EE8 /* OAProblem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE3F195D61D3007D6EE8 /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE25195D61D3007D6EE8 /* OARequestParameter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE40195D61D3007D6EE8 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE27195D61D3007D6EE8 /* OAServiceTicket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE41195D61D3007D6EE8 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE2A195D61D3007D6EE8 /* OAToken.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE42195D61D3007D6EE8 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE2C195D61D3007D6EE8 /* OATokenManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A19CE43195D61D3007D6EE8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A19CE30195D61D3007D6EE8 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3AFC7BAE195E813400B83FAC /* Share_linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7BAC195E813400B83FAC /* Share_linkedin.png */; };
+		3AFC7BB3195E941600B83FAC /* follow.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7BB2195E941600B83FAC /* follow.jpeg */; };
+		3AFC7BB5195E9DEE00B83FAC /* linkedin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7BB4195E9DEE00B83FAC /* linkedin.png */; };
+		3AFC7BB7195EA86100B83FAC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7BB6195EA86100B83FAC /* back.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A19CDEE195D5FC8007D6EE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A19CDC6195D5FC7007D6EE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A19CDCD195D5FC7007D6EE8;
+			remoteInfo = LinkedIn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A19CDCE195D5FC7007D6EE8 /* LinkedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A19CDD1195D5FC7007D6EE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3A19CDD3195D5FC7007D6EE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A19CDD5195D5FC7007D6EE8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3A19CDD9195D5FC7007D6EE8 /* LinkedIn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkedIn-Info.plist"; sourceTree = "<group>"; };
+		3A19CDDB195D5FC7007D6EE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A19CDDD195D5FC7007D6EE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A19CDDF195D5FC8007D6EE8 /* LinkedIn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinkedIn-Prefix.pch"; sourceTree = "<group>"; };
+		3A19CDE0195D5FC8007D6EE8 /* TLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLAppDelegate.h; sourceTree = "<group>"; };
+		3A19CDE1195D5FC8007D6EE8 /* TLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLAppDelegate.m; sourceTree = "<group>"; };
+		3A19CDE3195D5FC8007D6EE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3A19CDE9195D5FC8007D6EE8 /* LinkedInTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedInTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A19CDEA195D5FC8007D6EE8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3A19CDF2195D5FC8007D6EE8 /* LinkedInTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkedInTests-Info.plist"; sourceTree = "<group>"; };
+		3A19CDF4195D5FC8007D6EE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3A19CDF6195D5FC8007D6EE8 /* LinkedInTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedInTests.m; sourceTree = "<group>"; };
+		3A19CE01195D602B007D6EE8 /* TLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLViewController.h; sourceTree = "<group>"; };
+		3A19CE02195D602B007D6EE8 /* TLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLViewController.m; sourceTree = "<group>"; };
+		3A19CE05195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		3A19CE06195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		3A19CE07195D61D3007D6EE8 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		3A19CE08195D61D3007D6EE8 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		3A19CE09195D61D3007D6EE8 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		3A19CE0A195D61D3007D6EE8 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		3A19CE0C195D61D3007D6EE8 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		3A19CE0D195D61D3007D6EE8 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		3A19CE0E195D61D3007D6EE8 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		3A19CE0F195D61D3007D6EE8 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		3A19CE10195D61D3007D6EE8 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		3A19CE11195D61D3007D6EE8 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		3A19CE13195D61D3007D6EE8 /* OAAtachmentF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAtachmentF.h; sourceTree = "<group>"; };
+		3A19CE14195D61D3007D6EE8 /* OAAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAttachment.h; sourceTree = "<group>"; };
+		3A19CE15195D61D3007D6EE8 /* OAAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAttachment.m; sourceTree = "<group>"; };
+		3A19CE16195D61D3007D6EE8 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OACall.h; sourceTree = "<group>"; };
+		3A19CE17195D61D3007D6EE8 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OACall.m; sourceTree = "<group>"; };
+		3A19CE18195D61D3007D6EE8 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		3A19CE19195D61D3007D6EE8 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		3A19CE1A195D61D3007D6EE8 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		3A19CE1B195D61D3007D6EE8 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		3A19CE1C195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		3A19CE1D195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		3A19CE1E195D61D3007D6EE8 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		3A19CE1F195D61D3007D6EE8 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		3A19CE20195D61D3007D6EE8 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		3A19CE21195D61D3007D6EE8 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		3A19CE22195D61D3007D6EE8 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProblem.h; sourceTree = "<group>"; };
+		3A19CE23195D61D3007D6EE8 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProblem.m; sourceTree = "<group>"; };
+		3A19CE24195D61D3007D6EE8 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		3A19CE25195D61D3007D6EE8 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		3A19CE26195D61D3007D6EE8 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		3A19CE27195D61D3007D6EE8 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		3A19CE28195D61D3007D6EE8 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		3A19CE29195D61D3007D6EE8 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		3A19CE2A195D61D3007D6EE8 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		3A19CE2B195D61D3007D6EE8 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATokenManager.h; sourceTree = "<group>"; };
+		3A19CE2C195D61D3007D6EE8 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATokenManager.m; sourceTree = "<group>"; };
+		3A19CE2D195D61D3007D6EE8 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		3A19CE2F195D61D3007D6EE8 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		3A19CE30195D61D3007D6EE8 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		3AFC7BAC195E813400B83FAC /* Share_linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Share_linkedin.png; sourceTree = "<group>"; };
+		3AFC7BB2195E941600B83FAC /* follow.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = follow.jpeg; sourceTree = "<group>"; };
+		3AFC7BB4195E9DEE00B83FAC /* linkedin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linkedin.png; sourceTree = "<group>"; };
+		3AFC7BB6195EA86100B83FAC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A19CDCB195D5FC7007D6EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CDD4195D5FC7007D6EE8 /* CoreGraphics.framework in Frameworks */,
+				3A19CDD6195D5FC7007D6EE8 /* UIKit.framework in Frameworks */,
+				3A19CDD2195D5FC7007D6EE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A19CDE6195D5FC8007D6EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CDEB195D5FC8007D6EE8 /* XCTest.framework in Frameworks */,
+				3A19CDED195D5FC8007D6EE8 /* UIKit.framework in Frameworks */,
+				3A19CDEC195D5FC8007D6EE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A19CDC5195D5FC7007D6EE8 = {
+			isa = PBXGroup;
+			children = (
+				3A19CDD7195D5FC7007D6EE8 /* LinkedIn */,
+				3A19CDF0195D5FC8007D6EE8 /* LinkedInTests */,
+				3A19CDD0195D5FC7007D6EE8 /* Frameworks */,
+				3A19CDCF195D5FC7007D6EE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A19CDCF195D5FC7007D6EE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CDCE195D5FC7007D6EE8 /* LinkedIn.app */,
+				3A19CDE9195D5FC8007D6EE8 /* LinkedInTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A19CDD0195D5FC7007D6EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CDD1195D5FC7007D6EE8 /* Foundation.framework */,
+				3A19CDD3195D5FC7007D6EE8 /* CoreGraphics.framework */,
+				3A19CDD5195D5FC7007D6EE8 /* UIKit.framework */,
+				3A19CDEA195D5FC8007D6EE8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A19CDD7195D5FC7007D6EE8 /* LinkedIn */ = {
+			isa = PBXGroup;
+			children = (
+				3AFC7BB6195EA86100B83FAC /* back.png */,
+				3AFC7BB4195E9DEE00B83FAC /* linkedin.png */,
+				3AFC7BB2195E941600B83FAC /* follow.jpeg */,
+				3AFC7BAC195E813400B83FAC /* Share_linkedin.png */,
+				3A19CE04195D61D3007D6EE8 /* Categories */,
+				3A19CE0B195D61D3007D6EE8 /* Crytpo */,
+				3A19CE12195D61D3007D6EE8 /* OAuth */,
+				3A19CE2E195D61D3007D6EE8 /* JSON */,
+				3A19CE00195D6013007D6EE8 /* Views */,
+				3A19CDE0195D5FC8007D6EE8 /* TLAppDelegate.h */,
+				3A19CDE1195D5FC8007D6EE8 /* TLAppDelegate.m */,
+				3A19CDE3195D5FC8007D6EE8 /* Images.xcassets */,
+				3A19CDD8195D5FC7007D6EE8 /* Supporting Files */,
+			);
+			path = LinkedIn;
+			sourceTree = "<group>";
+		};
+		3A19CDD8195D5FC7007D6EE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CDD9195D5FC7007D6EE8 /* LinkedIn-Info.plist */,
+				3A19CDDA195D5FC7007D6EE8 /* InfoPlist.strings */,
+				3A19CDDD195D5FC7007D6EE8 /* main.m */,
+				3A19CDDF195D5FC8007D6EE8 /* LinkedIn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A19CDF0195D5FC8007D6EE8 /* LinkedInTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CDF6195D5FC8007D6EE8 /* LinkedInTests.m */,
+				3A19CDF1195D5FC8007D6EE8 /* Supporting Files */,
+			);
+			path = LinkedInTests;
+			sourceTree = "<group>";
+		};
+		3A19CDF1195D5FC8007D6EE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CDF2195D5FC8007D6EE8 /* LinkedInTests-Info.plist */,
+				3A19CDF3195D5FC8007D6EE8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A19CE00195D6013007D6EE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CE01195D602B007D6EE8 /* TLViewController.h */,
+				3A19CE02195D602B007D6EE8 /* TLViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A19CE04195D61D3007D6EE8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CE05195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.h */,
+				3A19CE06195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.m */,
+				3A19CE07195D61D3007D6EE8 /* NSString+URLEncoding.h */,
+				3A19CE08195D61D3007D6EE8 /* NSString+URLEncoding.m */,
+				3A19CE09195D61D3007D6EE8 /* NSURL+Base.h */,
+				3A19CE0A195D61D3007D6EE8 /* NSURL+Base.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		3A19CE0B195D61D3007D6EE8 /* Crytpo */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CE0C195D61D3007D6EE8 /* Base64Transcoder.c */,
+				3A19CE0D195D61D3007D6EE8 /* Base64Transcoder.h */,
+				3A19CE0E195D61D3007D6EE8 /* hmac.c */,
+				3A19CE0F195D61D3007D6EE8 /* hmac.h */,
+				3A19CE10195D61D3007D6EE8 /* sha1.c */,
+				3A19CE11195D61D3007D6EE8 /* sha1.h */,
+			);
+			path = Crytpo;
+			sourceTree = "<group>";
+		};
+		3A19CE12195D61D3007D6EE8 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CE13195D61D3007D6EE8 /* OAAtachmentF.h */,
+				3A19CE14195D61D3007D6EE8 /* OAAttachment.h */,
+				3A19CE15195D61D3007D6EE8 /* OAAttachment.m */,
+				3A19CE16195D61D3007D6EE8 /* OACall.h */,
+				3A19CE17195D61D3007D6EE8 /* OACall.m */,
+				3A19CE18195D61D3007D6EE8 /* OAConsumer.h */,
+				3A19CE19195D61D3007D6EE8 /* OAConsumer.m */,
+				3A19CE1A195D61D3007D6EE8 /* OADataFetcher.h */,
+				3A19CE1B195D61D3007D6EE8 /* OADataFetcher.m */,
+				3A19CE1C195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.h */,
+				3A19CE1D195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.m */,
+				3A19CE1E195D61D3007D6EE8 /* OAMutableURLRequest.h */,
+				3A19CE1F195D61D3007D6EE8 /* OAMutableURLRequest.m */,
+				3A19CE20195D61D3007D6EE8 /* OAPlaintextSignatureProvider.h */,
+				3A19CE21195D61D3007D6EE8 /* OAPlaintextSignatureProvider.m */,
+				3A19CE22195D61D3007D6EE8 /* OAProblem.h */,
+				3A19CE23195D61D3007D6EE8 /* OAProblem.m */,
+				3A19CE24195D61D3007D6EE8 /* OARequestParameter.h */,
+				3A19CE25195D61D3007D6EE8 /* OARequestParameter.m */,
+				3A19CE26195D61D3007D6EE8 /* OAServiceTicket.h */,
+				3A19CE27195D61D3007D6EE8 /* OAServiceTicket.m */,
+				3A19CE28195D61D3007D6EE8 /* OASignatureProviding.h */,
+				3A19CE29195D61D3007D6EE8 /* OAToken.h */,
+				3A19CE2A195D61D3007D6EE8 /* OAToken.m */,
+				3A19CE2B195D61D3007D6EE8 /* OATokenManager.h */,
+				3A19CE2C195D61D3007D6EE8 /* OATokenManager.m */,
+				3A19CE2D195D61D3007D6EE8 /* OAuthConsumer.h */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		3A19CE2E195D61D3007D6EE8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3A19CE2F195D61D3007D6EE8 /* JSONKit.h */,
+				3A19CE30195D61D3007D6EE8 /* JSONKit.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A19CDCD195D5FC7007D6EE8 /* LinkedIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A19CDFA195D5FC8007D6EE8 /* Build configuration list for PBXNativeTarget "LinkedIn" */;
+			buildPhases = (
+				3A19CDCA195D5FC7007D6EE8 /* Sources */,
+				3A19CDCB195D5FC7007D6EE8 /* Frameworks */,
+				3A19CDCC195D5FC7007D6EE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedIn;
+			productName = LinkedIn;
+			productReference = 3A19CDCE195D5FC7007D6EE8 /* LinkedIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A19CDE8195D5FC8007D6EE8 /* LinkedInTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A19CDFD195D5FC8007D6EE8 /* Build configuration list for PBXNativeTarget "LinkedInTests" */;
+			buildPhases = (
+				3A19CDE5195D5FC8007D6EE8 /* Sources */,
+				3A19CDE6195D5FC8007D6EE8 /* Frameworks */,
+				3A19CDE7195D5FC8007D6EE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A19CDEF195D5FC8007D6EE8 /* PBXTargetDependency */,
+			);
+			name = LinkedInTests;
+			productName = LinkedInTests;
+			productReference = 3A19CDE9195D5FC8007D6EE8 /* LinkedInTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A19CDC6195D5FC7007D6EE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = rossitek;
+				TargetAttributes = {
+					3A19CDE8195D5FC8007D6EE8 = {
+						TestTargetID = 3A19CDCD195D5FC7007D6EE8;
+					};
+				};
+			};
+			buildConfigurationList = 3A19CDC9195D5FC7007D6EE8 /* Build configuration list for PBXProject "LinkedIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3A19CDC5195D5FC7007D6EE8;
+			productRefGroup = 3A19CDCF195D5FC7007D6EE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A19CDCD195D5FC7007D6EE8 /* LinkedIn */,
+				3A19CDE8195D5FC8007D6EE8 /* LinkedInTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A19CDCC195D5FC7007D6EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CDDC195D5FC7007D6EE8 /* InfoPlist.strings in Resources */,
+				3A19CDE4195D5FC8007D6EE8 /* Images.xcassets in Resources */,
+				3AFC7BB7195EA86100B83FAC /* back.png in Resources */,
+				3AFC7BB5195E9DEE00B83FAC /* linkedin.png in Resources */,
+				3AFC7BB3195E941600B83FAC /* follow.jpeg in Resources */,
+				3AFC7BAE195E813400B83FAC /* Share_linkedin.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A19CDE7195D5FC8007D6EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CDF5195D5FC8007D6EE8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A19CDCA195D5FC7007D6EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CE35195D61D3007D6EE8 /* hmac.c in Sources */,
+				3A19CE41195D61D3007D6EE8 /* OAToken.m in Sources */,
+				3A19CE3B195D61D3007D6EE8 /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				3A19CE34195D61D3007D6EE8 /* Base64Transcoder.c in Sources */,
+				3A19CE32195D61D3007D6EE8 /* NSString+URLEncoding.m in Sources */,
+				3A19CE3E195D61D3007D6EE8 /* OAProblem.m in Sources */,
+				3A19CE42195D61D3007D6EE8 /* OATokenManager.m in Sources */,
+				3A19CE39195D61D3007D6EE8 /* OAConsumer.m in Sources */,
+				3A19CE36195D61D3007D6EE8 /* sha1.c in Sources */,
+				3A19CE3F195D61D3007D6EE8 /* OARequestParameter.m in Sources */,
+				3A19CE43195D61D3007D6EE8 /* JSONKit.m in Sources */,
+				3A19CE38195D61D3007D6EE8 /* OACall.m in Sources */,
+				3A19CE37195D61D3007D6EE8 /* OAAttachment.m in Sources */,
+				3A19CE03195D602B007D6EE8 /* TLViewController.m in Sources */,
+				3A19CE40195D61D3007D6EE8 /* OAServiceTicket.m in Sources */,
+				3A19CE3C195D61D3007D6EE8 /* OAMutableURLRequest.m in Sources */,
+				3A19CE3A195D61D3007D6EE8 /* OADataFetcher.m in Sources */,
+				3A19CDE2195D5FC8007D6EE8 /* TLAppDelegate.m in Sources */,
+				3A19CE31195D61D3007D6EE8 /* NSMutableURLRequest+Parameters.m in Sources */,
+				3A19CDDE195D5FC7007D6EE8 /* main.m in Sources */,
+				3A19CE33195D61D3007D6EE8 /* NSURL+Base.m in Sources */,
+				3A19CE3D195D61D3007D6EE8 /* OAPlaintextSignatureProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A19CDE5195D5FC8007D6EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A19CDF7195D5FC8007D6EE8 /* LinkedInTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A19CDEF195D5FC8007D6EE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A19CDCD195D5FC7007D6EE8 /* LinkedIn */;
+			targetProxy = 3A19CDEE195D5FC8007D6EE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A19CDDA195D5FC7007D6EE8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A19CDDB195D5FC7007D6EE8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3A19CDF3195D5FC8007D6EE8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A19CDF4195D5FC8007D6EE8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A19CDF8195D5FC8007D6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A19CDF9195D5FC8007D6EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A19CDFB195D5FC8007D6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedIn/LinkedIn-Prefix.pch";
+				INFOPLIST_FILE = "LinkedIn/LinkedIn-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3A19CDFC195D5FC8007D6EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedIn/LinkedIn-Prefix.pch";
+				INFOPLIST_FILE = "LinkedIn/LinkedIn-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3A19CDFE195D5FC8007D6EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinkedIn.app/LinkedIn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedIn/LinkedIn-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LinkedInTests/LinkedInTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3A19CDFF195D5FC8007D6EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinkedIn.app/LinkedIn";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedIn/LinkedIn-Prefix.pch";
+				INFOPLIST_FILE = "LinkedInTests/LinkedInTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A19CDC9195D5FC7007D6EE8 /* Build configuration list for PBXProject "LinkedIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A19CDF8195D5FC8007D6EE8 /* Debug */,
+				3A19CDF9195D5FC8007D6EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A19CDFA195D5FC8007D6EE8 /* Build configuration list for PBXNativeTarget "LinkedIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A19CDFB195D5FC8007D6EE8 /* Debug */,
+				3A19CDFC195D5FC8007D6EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A19CDFD195D5FC8007D6EE8 /* Build configuration list for PBXNativeTarget "LinkedInTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A19CDFE195D5FC8007D6EE8 /* Debug */,
+				3A19CDFF195D5FC8007D6EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A19CDC6195D5FC7007D6EE8 /* Project object */;
+}
