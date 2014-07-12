@@ -482,7 +482,7 @@ int totalHeight,ylatestPos;
                             initWithObjectsAndKeys:
                             @"company_id_value",@"id",nil];
     
-    //Keep the company's linkedin page id in the above updates dictonary
+    //Keep the company's linkedin page id in the above updates dictonary  in place of @"company_id_value"
     
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@"json" forHTTPHeaderField:@"x-li-format"];
@@ -503,7 +503,7 @@ int totalHeight,ylatestPos;
 {
     [activityIndicator stopAnimating];
     NSLog(@"Following Company Successful");
-    UIAlertView *alrt=[[UIAlertView alloc] initWithTitle:@"Linked In" message:@"You Are Now Following Rossitek Mobile Apps Development Company" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *alrt=[[UIAlertView alloc] initWithTitle:@"Linked In" message:@"You Are Now Following Company" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alrt show];
 //    [self networkApiCall];
 }
