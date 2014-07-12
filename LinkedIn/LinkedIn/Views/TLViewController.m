@@ -420,10 +420,8 @@ int totalHeight,ylatestPos;
                            signatureProvider:nil];
     
     NSDictionary *contentDic=[[NSDictionary alloc] initWithObjectsAndKeys:
-                              @"IOS-App Testing",@"title",
-                              @"www.rossitek.com",@"submitted-url",
-                              @"http://www.rossitek.com/images/NEW_BANNER.jpg",@"submitted-image-url",
-                              @"Rossitek Mobile Apps Development Company",@"description",nil];
+                              @"Post From iOS Device",@"title",
+                              @"Post Description body Here",@"description",nil];
     
     NSDictionary *update = [[NSDictionary alloc] initWithObjectsAndKeys:
                             [[NSDictionary alloc]
@@ -478,16 +476,13 @@ int totalHeight,ylatestPos;
                                                                    callback:nil
                                                           signatureProvider:nil];
 
-        //Tofollow Apesb Company
-//    NSDictionary *updates =[[NSDictionary alloc]
-//                              initWithObjectsAndKeys:
-//                              @"1838737",@"id",nil];
-    
-    
-    //Tofollow Rossitek Company
+
+    //Tofollow Rossitek Company 
     NSDictionary *updates =[[NSDictionary alloc]
                             initWithObjectsAndKeys:
-                            @"2437052",@"id",nil];
+                            @"company_id_value",@"id",nil];
+    
+    //Keep the company's linkedin page id in the above updates dictonary
     
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setValue:@"json" forHTTPHeaderField:@"x-li-format"];
