@@ -2,8 +2,7 @@
 //  LinkedInTests.m
 //  LinkedInTests
 //
-//  Created by DEV_IPHONE_01 on 27/06/14.
-//  Copyright (c) 2014 rossitek. All rights reserved.
+//  Created by Tilak_G on 27/06/14.
 //
 
 #import <XCTest/XCTest.h>
